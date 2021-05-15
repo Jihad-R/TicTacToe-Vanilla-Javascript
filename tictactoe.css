@@ -1,0 +1,126 @@
+.wrapper { 
+    height: 100%;
+    width: 100%;
+    left:0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    position: absolute;
+  background: linear-gradient(124deg, #ff2400, #e81d1d, #e8b71d, #e3e81d, #1de840, #1ddde8, #2b1de8, #dd00f3, #dd00f3);
+  background-size: 1800% 1800%;
+  
+  -webkit-animation: rainbow 18s ease infinite;
+  -z-animation: rainbow 18s ease infinite;
+  -o-animation: rainbow 18s ease infinite;
+    animation: rainbow 18s ease infinite;}
+  
+  @-webkit-keyframes rainbow {
+      0%{background-position:0% 82%}
+      50%{background-position:100% 19%}
+      100%{background-position:0% 82%}
+  }
+  @-moz-keyframes rainbow {
+      0%{background-position:0% 82%}
+      50%{background-position:100% 19%}
+      100%{background-position:0% 82%}
+  }
+  @-o-keyframes rainbow {
+      0%{background-position:0% 82%}
+      50%{background-position:100% 19%}
+      100%{background-position:0% 82%}
+  }
+  @keyframes rainbow { 
+      0%{background-position:0% 82%}
+      50%{background-position:100% 19%}
+      100%{background-position:0% 82%}
+  }
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+
+.Heads{
+    display: grid;
+    grid-template-columns: 5%  auto  5%;
+    grid-template-rows: 30% autos;
+    background: transparent;
+    color: aliceblue;
+    height: 10s0px;
+    width: 500px;
+    border-radius: 0px 0px 15px 15px;
+    box-shadow: 0px 5px 20px black;
+}
+
+.titleh1{
+    text-align: center;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.Heady{
+    display: flex;
+    justify-content: center;
+}
+
+.btnRestart{
+    background-color: transparent;
+    margin-top: 15px;
+    margin-left: 80px;
+    margin-bottom: 5px;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    color: aliceblue;
+    width: 100px;
+    height: 30px;
+    border: 0px;    box-shadow: 0px 5px 20px black;
+
+
+    transition: 0.3s;
+
+}
+
+.btnRestart:hover {
+    background-color: blueviolet;
+    cursor: pointer;
+}
+
+.tablecontainer{
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+table, tr, td{
+    border: 5px solid black;
+    border-collapse: collapse;
+
+}
+
+table{
+    width: 500px;
+    height: 10px;
+    background-color: white;
+
+}
+
+td{
+    text-decoration: none;
+    text-align: center;
+    width: 100px;
+    height: 100px;
+    padding: 20px
+}
+
+.winner{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 0px;
+}
